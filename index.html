@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>User Management System</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">User Management System</a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Create User</a></li>
+            <li><a href="#">Update User</a></li>
+            <li><a href="#">Delete User</a></li>
+        </ul>
+
+        <div class="btn-icon">
+            <a href="#" class="btn">New User</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <form id="user-form">
+            <label for="name"> First Name:</label>
+            <input type="text" id="fistname" placeholder="Enter your 1st name" required>
+            <label for="lastname"> Last Name:</label>
+            <input type="text" id="lastname" placeholder="Enter your last name" required>
+            <!-- <br> -->
+            
+            <label for="id-number">ID Number:</label>
+            <input type="number" id="id-number" placeholder="123456" required>
+            <!-- <br> -->
+            
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="UK">United Kingdom</option>
+                <option value="AUS">Austria</option>
+                <option value="MEX">Mexico</option>
+                <option value="IND">India</option>
+                <option value="KEN">Kenya</option>
+            </select>
+            <!-- <br> -->
+            
+            <label for="languages">Languages Spoken:</label>
+            <select id="languages" required>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+            </select>
+            <!-- <br> -->
+            
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+
+    <!-- <table id="user-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>ID Number</th>
+            <th>Country</th>
+            <th>Languages Spoken</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table> -->
+
+    <script src="./Src/script.js"></script>
+
+</body>
+</html>
